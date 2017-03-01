@@ -18,10 +18,10 @@ public class App
     
     //Email validator method
     public void jEmailValidator(String jEmail){
+    	//Regex string [A-Z0-9._%+-]+@[A-Z0-9.-]+\\.[A-Z]{2,4} for a valid email address
     	//Rule 1: The string has a single '@' character
-    	//Rule 2: The string has at least one '.' character
-    	// Regex string [A-Z0-9._%+-]+@[A-Z0-9.-]+\\.[A-Z]{2,4}
-    	Pattern jPattern = Pattern.compile("[A-Z]+@[A-Z]+\\.[A-Z]{2,4}");
+    	//Rule 2: The string has at least one '.' character    	
+    	Pattern jPattern = Pattern.compile("[A-Z.]+@[A-Z.]+\\.[A-Z]{2,4}");
     	
     	//Matching string to the pattern for a valid email address
     	Matcher jMatcher = jPattern.matcher(jEmail.toUpperCase());

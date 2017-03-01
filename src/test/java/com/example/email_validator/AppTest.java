@@ -15,8 +15,7 @@ public class AppTest
      *
      * @param testName name of the test case
      */
-    public AppTest( String testName )
-    {
+    public AppTest(String testName){
         super( testName );
     }
 
@@ -31,16 +30,14 @@ public class AppTest
      */
     
     @org.junit.Test
-    //This test checks for a single '@' character and atleast one '.' character
-    public void testApp1()
-    {
+    //This test checks for a single '@' character and at least one '.' character
+    public void testApp1(){
         App jTestApp = new App();
         jTestApp.jEmailValidator("Your@name.ca");
     	assertTrue( true );
     }
   //This test checks for a single '@' character and atleast one '.' character
-    public void testApp2()
-    {
+    public void testApp2(){
         App jTestApp = new App();
         jTestApp.jEmailValidator("Yo.ur@na.me.ca");
     	assertTrue( true );
